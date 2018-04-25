@@ -1,0 +1,24 @@
+{
+  "name": "Builds and runs the new mocha test",
+  "operations": [
+    {
+      "name": "Build and run mocha test",
+      "actions": [
+        {
+          "name": "create mocha files",
+          "type": "terminal",
+          "values": {
+            "text": "node testimport.js"
+          }
+        },
+        {
+          "name": "Run mocha test",
+          "type": "terminal",
+          "values": {
+            "text": "mocha --timeout 30000 outputs/convertedFromJSON.js"
+          }
+        }
+      ]
+    }
+  ]
+}
