@@ -1,0 +1,24 @@
+{
+  "name": "json2mochaenv-cli",
+  "version": "1.0.0",
+  "description": "Creates a Json2Mocha dev environment",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NickDMansfield/Json2MochaEnv-CLI.git"
+  },
+  "keywords": [
+    "Json",
+    "mocha",
+    "automation"
+  ],
+  "author": "Nickdmansfield@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NickDMansfield/Json2MochaEnv-CLI/issues"
+  },
+  "homepage": "https://github.com/NickDMansfield/Json2MochaEnv-CLI#readme"
+}
