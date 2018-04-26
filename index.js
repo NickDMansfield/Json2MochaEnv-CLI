@@ -11,5 +11,5 @@ program
 const dir = process.cwd();
 
 
-fs.createReadStream("./resources/bar.salvo.json").pipe(fs.createWriteStream(dir + '/bar.salvo.json'));
-fs.createReadStream("./resources/source.json").pipe(fs.createWriteStream(dir + '/source.json'));
+fs.createReadStream(__dirname + "/resources/bar.salvo.json").pipe(fs.createWriteStream(dir + '/bar.salvo.json'));
+fs.createReadStream(__dirname + "/resources/source.json").pipe(fs.createWriteStream(dir + '/source.json'));
