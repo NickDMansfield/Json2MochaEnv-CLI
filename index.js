@@ -1,6 +1,6 @@
 #! /usr/bin/env node
 const program = require("commander");
-
+const fs = require('fs');
 
 program
   .version('0.0.1')
@@ -8,4 +8,8 @@ program
   .parse(process.argv);
 
 //  It is assumed that the dir from which this is called will be populated with the framework
-console.log(process.cwd());
+const dir = process.cwd();
+
+
+fs.createReadStream("./resources/bar.salvo.json").pipe(fs.createWriteStream(dir + '/bar.salvo.json'));
+fs.createReadStream("./resources/source.json").pipe(fs.createWriteStream(dir + '/source.json'));

@@ -1,0 +1,53 @@
+{
+  "description": "sample obj desc",
+  "config": {
+    "autoDelay": 750
+  },
+  "actions": [],
+  "sharedItActions": [
+    {
+        "note": "This will be applied to every 'It' statement",
+        "action": {
+        "method": "get",
+        "values": [
+          "'http://google.com'"
+        ]
+      }
+    }
+  ],
+  "describes": [
+    {
+      "description": "Searches google - loaded from a json file",
+      "actions": [],
+      "its": [
+        {
+          "should": "search google",
+          "actions": [
+            {
+              "target": {
+                "searchBy":"name",
+                "value": "'q'"
+              },
+              "action": {
+                "method": "sendKeys",
+                "values": [
+                  "'npm json2mocha'"
+                ]
+              }
+            },
+            {
+              "target": {
+                "searchBy":"name",
+                "value": "'q'"
+              },
+              "action": {
+                "method": "submit",
+                "values": []
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

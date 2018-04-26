@@ -1,0 +1,24 @@
+{
+  "name": "Builds and runs the new mocha test",
+  "operations": [
+    {
+      "name": "Build and run mocha test",
+      "actions": [
+        {
+          "name": "create mocha file",
+          "type": "terminal",
+          "values": {
+            "text": "j2m -j source.json -n test.mocha.js"
+          }
+        },
+        {
+          "name": "Run mocha test",
+          "type": "terminal",
+          "values": {
+            "text": "mocha --timeout 30000 test.mocha.js"
+          }
+        }
+      ]
+    }
+  ]
+}
