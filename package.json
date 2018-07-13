@@ -1,6 +1,6 @@
 {
   "name": "json2mochaenv-cli",
-  "version": "1.0.3",
+  "version": "1.0.5",
   "description": "Creates a Json2Mocha dev environment",
   "main": "index.js",
   "scripts": {
@@ -22,6 +22,8 @@
   },
   "homepage": "https://github.com/NickDMansfield/Json2MochaEnv-CLI#readme",
   "dependencies": {
+    "json2mocha": "^1.1.0",
+    "json2mocha-cli": "^1.0.4",
     "salvo": "^0.4.48"
   },
   "bin": {
